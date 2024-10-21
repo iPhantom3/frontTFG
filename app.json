@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "frontRepo-tfg",
+    "slug": "frontrepo-tfg",
+    "scheme": "frontRepo-tfg",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "usesIcloudStorage": true,
+      "bundleIdentifier": "frontRepo-tfg"
+    },
+    "android": {
+      "package": "com.eurotaller.appeurotaller",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permita que $(PRODUCT_NAME) acceda a tu galeria",
+          "cameraPermission": "Permita que $(PRODUCT_NAME) acceda a tu camera"
+        }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permita que $(PRODUCT_NAME) acceda a tu camera",
+          "microphonePermission": "Permita que $(PRODUCT_NAME) acceda a tu micrófono",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "70f0497f-1a48-4bb3-ad17-2881ea91e9ed"
+      }
+    },
+    "owner": "iphantom3"
+  }
+}
